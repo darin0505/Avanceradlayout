@@ -1,0 +1,110 @@
+/*https://coolors.co/a9cef4-36494e-000000-7ea0b7-597081*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    background-color: #A9CEF4;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 800px;
+    ;
+}
+
+header {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+header nav a:hover {
+    color: red;
+    background-color: #597081;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #7EA0B7;*/
+    margin: 10px auto;
+    width: 80%;
+}
+
+footer {
+    background-color: #36494E;
+    color: #A9CEF4;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media(min-width:600px) {
+
+
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        gap: 70px;
+        margin: 0 30px;
+    }
+
+}
+
+/*Form*/
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.send-button-container {
+    margin: 0 auto;
+
+}
+
+label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+/*.send-button-container input {
+    width: 30%;
+    min-width: 100px;
+} */
+
+@media (min-width:600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .send-button-container {
+        grid-column: span 2;
+    }
+}
